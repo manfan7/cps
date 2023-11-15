@@ -6,94 +6,77 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/script.js" defer></script>
   </head>
   <body>
-    <div class="container">
-      <div class="header-wrapper">
-        <div class="header-wrapper__top wrapper-thin">
-          <div class="header-wrapper__topleft">
-            <div class="header-wrapper__topleft--item-1">
-              <img src="./assets/images/burger.png" alt="" />
-            </div>
-            <div class="header-wrapper__topleft--item-2">
-              <img src="./assets/images/Group.png" alt="" />
-            </div>
+    <header class="header header__mobile">
+      <div class="container">
+        <div class="header__left">
+          <div class="header__item">
+            <button class="header__item-btn btn8"></button>
           </div>
-          <div class="header-wrapper__topright">
-            <div class="header-wrapper__topleft--item-1 hidden-item">
-              <img src="./assets/images/call.png" alt="" />
-            </div>
-            <div class="header-wrapper__topleft--item-1 hidden-item">
-              <img src="./assets/images/chat.png" alt="" />
-            </div>
-            <div class="header-wrapper__topleft--item-1 hidden-item">
-              <img src="./assets/images/profile.png" alt="" />
-            </div>
-            <div class="header-wrapper__topleft--item-1 stroke-item">
-              <img src="./assets/images/repair.png" alt="" />
-            </div>
-            <div class="header-wrapper__topleft--item-1">
-              <img src="./assets/images/checkstatus.png" alt="" />
-            </div>
+          <div class="header__item">
+            <a href="#"><img src="./assets/images/Group.png" alt="logo" /></a>
           </div>
         </div>
-        <div class="header-wrapper__bottom">
-          <div class="header-wrapper__bottomcontainer wrapper-thin">
-            <h1 class="header-wrapper__bottomcontainer--descr">
-              Услуги и сервисы
-            </h1>
+        <div class="header__right">
+          <div class="header__item hidden-item">
+            <button class="header__item-btn btn3"></button>
+          </div>
+          <div class="header__item hidden-item">
+            <button class="header__item-btn btn4"></button>
+          </div>
+          <div class="header__item hidden-item">
+            <button class="header__item-btn btn5"></button>
+          </div>
+          <div class="header__item stroke-item">
+            <button class="header__item-btn btn6"></button>
+          </div>
+          <div class="header__item">
+            <button class="header__item-btn btn7"></button>
           </div>
         </div>
       </div>
-      <div class="header-wrapper__desctop">
-        <div class="header-wrapper__top">
-          <div class="header-wrapper__topleft">
-            <div class="header-wrapper__bottomcontainer">
-              <h1 class="header-wrapper__bottomcontainer--descr">
-                Услуги и сервисы
-              </h1>
-            </div>
+      <div class="title">
+        <!-- <h1 class="title__descr">Услуги и сервисы</h1> -->
+      </div>
+    </header>
+    <header class="header header__desctop">
+      <div class="container">
+        <div class="header__left">
+          <div class="title">
+            <!--   <h1 class="title__descr">Услуги и сервисы</h1> -->
           </div>
-          <div class="header-wrapper__topright">
-            <div class="header-wrapper__topleft--item-1">
-              <span>Оставить заявку</span>
-              <img src="./assets/images/repair.png" alt="" />
-            </div>
-            <div class="header-wrapper__topleft--item-1">
-              <span>Статус ремонта</span>
-              <img src="./assets/images/checkstatus.png" alt="" />
-            </div>
+        </div>
+        <div class="header__right">
+          <div class="header__item">
+            <a href="">Оставить заявку</a>
+            <button class="header__item-btn btn1"></button>
+          </div>
+          <div class="header__item">
+            <a href="">Статус ремонта</a>
+            <button class="header__item-btn btn2"></button>
           </div>
         </div>
       </div>
-      <section class="nav-section">
-        <div class="nav-section__item active">
-          <span>Ремонтируемые устройства</span>
-        </div>
-        <div class="nav-section__item">
-          <span>Ремонтируемые бренды</span>
-        </div>
-        <div class="nav-section__item">
-          <span>Цены на услуги</span>
-        </div>
-        <div class="nav-section__item">
-          <span>Адреса сервисных центров</span>
-        </div>
-        <div class="nav-section__item">
-          <span>Специальные цены</span>
-        </div>
-      </section>
-      <section class="reviews">
-        <div class="reviews-content">
-          <p class="reviews-content__item">Отзывы</p>
-        </div>
-      </section>
-      <section class="main">
-        <div
-          class="main-content wrapper-thin main-content__item main-content__descr-item"
-        >
-          <div class="main-content__descr">
-            <div class="main-content__descr--first">
+    </header>
+
+    <section class="nav">
+      <ul>
+        <li class="nav__item active">Ремонтируемые устройства</li>
+        <li class="nav__item">Ремонтируемые бренды</li>
+        <li class="nav__item">Цены на услуги</li>
+        <li class="nav__item">Адреса сервисных центров</li>
+        <li class="nav__item">Специальные цены</li>
+      </ul>
+      <li class="breadcrumbs__item">Отзывы</li>
+    </section>
+
+    <main class="main">
+      <section class="section">
+        <div class="container">
+          <div class="text-media">
+            <div class="text-media__content">
               <p>
                 Мы являемся авторизованным сервисным центром по ремонту техники
                 Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
@@ -102,34 +85,34 @@
               <p class="hidden-item">
                 Мы успешно работаем с 1992 года и заслужили репутацию надежного
                 партнера<span class="hidden-text"
-                  >что подтверждает большое количество постоянных клиентов. Мы
-                  гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                  очередь, советуют нас родным и близким.</span
+                  >что подтверждает большое количество постоянных клиентов.
+                  Мыгордимся тем, что к нам обращаются по рекомендациям и, в
+                  своюочередь, советуют нас родным и близким.</span
                 >
               </p>
-            </div>
-            <div class="main-content__descr--next">
-              <div class="main-content__descr--next-icon">
-                <img src="./assets/images/icon.png" alt="" id="iconButton" />
+              <div class="read-more">
+                <div class="read-more__icon">
+                  <button class="header__item-btn btn10"></button>
+                </div>
+                <button class="read-more__btn">Читать далее</button>
               </div>
-              <p>Читать далее</p>
+            </div>
+            <div class="text-media__media">
+              <picture>
+                <source
+                  srcset="assets/images/MG1120.jpg"
+                  media="(min-width: 1120px)"
+                />
+                <source
+                  srcset="assets/images/MG_3223.jpg"
+                  media="(min-width: 768px)"
+                />
+                <img src="./assets/images/Picture320.jpg" alt="img" />
+              </picture>
             </div>
           </div>
         </div>
-        <div class="main-picture main-content__item main-content__descr-item">
-          <picture>
-            <source
-              srcset="./assets/images/_MG1120.jpg"
-              media="(min-width: 1120px)"
-            />
-            <source
-              srcset="./assets/images/_MG_3223.jpg"
-              media="(min-width: 768px)"
-            />
-            <img src="./assets/images/Picture320.jpg" alt="" />
-          </picture>
-        </div>
       </section>
-    </div>
+    </main>
   </body>
 </html>

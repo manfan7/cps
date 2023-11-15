@@ -1,0 +1,36 @@
+.read-more {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px 0;
+}
+
+.read-more__icon {
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.read-more__icon img {
+  width: auto;
+}
+
+.read-more__btn {
+  color: #1b1c21;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  -webkit-text-stroke-width: 0.3px;
+  background: none;
+  border: navajowhite;
+}
+.btn10 {
+  background-image: url(../images/icon.png);
+  width: 8px;
+  height: 11px;
+}
