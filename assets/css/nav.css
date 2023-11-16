@@ -34,6 +34,26 @@ cursor: pointer;
   line-height: 24px; /* 150% */
   letter-spacing: -0.2px;
 }
+.review__item {
+  list-style: none;
+  display: none;
+}
+
+@media (min-width: 1119px) {
+  .review__item {
+    color: #7e7e82;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    margin-bottom: 4px;
+    padding: 10px 0;
+    margin-left: 36px;
+    margin-top: -5px;
+    display: flex;
+  }
+}
 
 .nav__item.active {
   border-radius: 6px;
